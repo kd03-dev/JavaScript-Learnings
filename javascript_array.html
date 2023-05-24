@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Array</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="constant1"></p>
+        <p id="constant2"></p>
+        <p id="constant3"></p>
+        <p id="constant4"></p>
+        <script>
+            //we can modify the array, but can't change the reference of that
+            const names=["Kandarp","Karna","Krishna"];
+            names[2]="Kanhaiya";
+            names.push("Dave");
+            document.getElementById("demo").innerHTML=names;
+
+            //we can't give reference of it 
+            const surnames=["Dave","Pandya","Vyas"];
+            document.getElementById("constant1").innerHTML=surnames;
+            //surnames=names;
+            document.getElementById("constant2").innerHTML=surnames; 
+
+            //we can't even do it by using let of var/let also
+            // var names=["AB","BC","CD"];
+            // document.getElementById("constant3").innerHTML=alpha;
+            // alpha=names;
+            // document.getElementById("constant4").innerHTML=alpha;
+        </script>
+    </body>
+</html>
