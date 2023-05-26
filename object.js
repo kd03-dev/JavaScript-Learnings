@@ -4,3 +4,5 @@ const human = {
     age : 18
 }
 console.log("FirstName: "+ human.firstName + "\n" + "LastName: " + human.lastName + "\n" + "Age:" + human.age + "\n");
+console.table(human);
+
