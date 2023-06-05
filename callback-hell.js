@@ -25,3 +25,23 @@ const callBackHell = (n) => {
 }
 
 callBackHell(5);
+
+// also if we consider the below example, this kind of mistakenly issue we can face
+function fun() {
+
+    setTimeout(()=> {
+
+        console.log("call me first");
+    },2000);
+}
+
+function afterFun() {
+
+    setTimeout(()=> {
+
+        console.log("call me second");
+    }, 1000);
+}
+
+fun();
+afterFun();

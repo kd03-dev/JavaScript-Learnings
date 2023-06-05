@@ -2,7 +2,7 @@ console.log("It's var vs let, not val vs let");
 
 //declare global variable using let only
 //if you declare using var, then if it matches with any windows property name, it may change that windows property's value
-//var name="Kandarp";
+var surname="dave";
 let name="Kandarp";
 
 // let = scope is limited to block 
